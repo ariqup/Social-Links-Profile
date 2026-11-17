@@ -1,0 +1,90 @@
+/* ===== 1. Reset: hapus jarak bawaan browser ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== 2. Latar belakang halaman ===== */
+body {
+  background-color: #141414;      /* hitam (Grey 900) */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;              /* setinggi layar */
+  display: flex;                  /* supaya kartu bisa di tengah */
+  justify-content: center;        /* tengah kiri-kanan */
+  align-items: center;            /* tengah atas-bawah */
+  padding: 24px;
+}
+
+/* ===== 3. Kartu ===== */
+.card {
+  background-color: #1F1F1F;      /* abu gelap (Grey 800) */
+  width: 100%;
+  max-width: 384px;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* ===== 4. Foto profil bulat ===== */
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;             /* 50% = bulat penuh */
+  margin-bottom: 24px;
+}
+
+/* ===== 5. Nama ===== */
+.name {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* ===== 6. Lokasi (hijau) ===== */
+.location {
+  color: #C4F82A;                 /* hijau stabilo */
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* ===== 7. Bio ===== */
+.bio {
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+/* ===== 8. Daftar tombol ===== */
+.links {
+  list-style: none;               /* hapus titik bullet */
+  display: flex;
+  flex-direction: column;         /* tombol tersusun ke bawah */
+  gap: 16px;                      /* jarak antar tombol */
+}
+
+.links a {
+  display: block;
+  background-color: #333333;      /* abu (Grey 700) */
+  color: #FFFFFF;
+  text-decoration: none;          /* hapus garis bawah link */
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.2s;               /* animasi halus saat hover */
+}
+
+/* ===== 9. Efek saat mouse diarahkan ke tombol ===== */
+.links a:hover,
+.links a:focus {
+  background-color: #C4F82A;
+  color: #333333;
+}
+
+/* ===== 10. Tampilan HP (layar kecil) ===== */
+@media (max-width: 400px) {
+  .card {
+    padding: 24px;
+  }
+}
